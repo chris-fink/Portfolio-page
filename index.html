@@ -1,136 +1,457 @@
-<div class="w3-top">
-  <ul class="w3-navbar" id="myNavbar">
-    <li><a href="#" class="w3-padding-large">Christopher</a></li>
-    <li class="w3-hide-small w3-right">
-      <a href="#contact" class="w3-padding-large">Contact</a>
-    </li>
-    <li class="w3-hide-small w3-right">
-      <a href="#portfolio" class="w3-padding-large">Portfolio</a>
-    </li>
-    <li class="w3-hide-small w3-right">
-      <a href="#about" class="w3-padding-large">About</a>
-    </li>
-  </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+<body>
+<!--Navbar section-->
+<div class="container-fluid">
+	<div class="row" id="header">
+		<div class="col-md-12" id="head">
+			<nav class="navbar navbar-light bg-light" id="navbar">
+					<div class="col-md-2">
+					</div>
+					<div class="col-md-3" id="logo-div">
+                  		<a class="navbar-brand" href="#">
+                    		<img src="img/Instagram_Logo_Large.png" alt="" width="150" height="50" class="logo">
+                  		</a>
+					</div>
+					<div class="col-md-5" id="search-div">	
+                  		<div class="d-flex justify-content-center" id="search">
+                    		<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    			<button class="btn btn-outline-success" type="submit">Search</button>
+						</div>
+					</div>
+					<div class="col-md-2">
+					</div>
+			</nav>
+		</div>
+	</div>
+
+	<!--Mobile Navbar-->
+	<nav class="navbar bg-light" id="mobile-nav">
+		<div class="container-fluid">
+		  <span class="navbar-brand mb-0 h1" id="mobile-name">chris_fink</span>
+		</div>
+	  </nav> 
 </div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-opacity w3-display-container">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">CHRISTOPHER <span class="w3-hide-small">FINK</span></h1>
-  </div>
+    <!--HEADER SECTION-->
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-6" id="profile-image">
+                    <img alt="Profile pic" src="img/profile picture.jpg" id="profile-pic" />
+				</div>
+				<!--Mobile Header section-->
+				<div class="col-md-6" id="mobile-info-bar">
+					<div class="row">
+                        <h1 class>chris_fink</h1>
+					</div>
+					<div class="row">
+						<div class="col-md-2" id="mobile-message">
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#exampleModal" id="mobile-mess-btn">Message</button>
+						</div>
+						<div class="col-md-2" id="mobile-add">
+							<button type="button" class="btn btn-light" id="mobile-add-person"><img src="person-plus-fill.svg" alt="add" class="add-friend" /></button>
+						</div>
+					</div>
+				</div>
+				<!--Mobile Bio-->
+				<div class="row" id="mobile-bio">
+					<div class="col-md-12">
+						<h3>Christopher Fink <span>He/Him/His</span></h3>
+						<p>Hi! My name is Chris and I enjoy solving problems and building solutions. This love for problem solving is what has drawn me to the world of web development. For me the greatest reward is the feeling of fixing the bug that has plagued my code and seeing my program work as designed.</p>
+						<p>This desire to solve problems and build solutions has brought me to the place in life where I am looking to make a career transition and join the tech industry as a web developer.</p>
+						<p>In my learning journy to become a developer I have become proficient in <b>JavaScript, Python, HTML, and CSS</b>. I have also gained experience working with <b>React</b>, and CSS frameworks such as <b>Bootstrap</b> and <b>Tailwind</b>.</p>
+						<p>Visit: <a href="https://linktr.ee/fink.dev">linktr.ee/fink.dev</a></p>
+					</div>
+				</div>
+				<!--Mobile Langauages-->
+				<div class="row flex-row flex-nowrap" id="mobile-story-bar">
+					<div class="col-md-2"  id="mobile-languages-bar">                    
+						<img alt="JS" id="mobile-js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="stack" />
+						<div class="mobile-story-title">JAVASCRIPT</div>
+					</div>
+					<div class="col-md-2"  id="mobile-languages-bar">
+						<img alt="Bootstrap" id="mobile-bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="stack" />
+						<div class="mobile-story-title">BOOTSTRAP</div>
+	
+					</div>
+					<div class="col-md-2"  id="mobile-languages-bar">
+						<img alt="Tailwind" id="mobile-Tailwind" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="stack" />
+						<div class="mobile-story-title">Tailwind</div>
+					</div>
+					<div class="col-md-2"  id="mobile-languages-bar">
+						<img alt="NodeJS" id="mobile-NodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"" class="stack" />
+						<div class="mobile-story-title">NodeJS</div>
+					</div>
+					<div class="col-md-2"  id="mobile-languages-bar">
+						<img alt="SASS" id="mobile-sass" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" class="stack" />
+						<div class="mobile-story-title">SASS</div>
+					</div>
+					<div class="col-md-2"  id="mobile-languages-bar">
+						<img alt="PYTHON" id="mobile-python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="stack" />
+						<div class="mobile-story-title">PYTHON</div>
+					</div>
+					<div class="col-md-2" id="mobile-languages-bar">
+						<img alt="CSS3" id="mobile-css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="stack" />
+						<div class="mobile-story-title">CSS</div>
+					</div>
+					<div class="col-md-2" id="mobile-languages-bar">
+						<img alt="HTML5" id="mobile-html" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="stack" />
+						<div class="mobile-story-title">HTML</div>
+					</div>
+					<div class="col-md-2" id="mobile-languages-bar">
+						<img alt="GITHUB" id="mobile-GITHUB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="stack" />
+						<div class="mobile-story-title">GITHUB</div>
+					</div>
+					<div class="col-md-2" id="mobile-languages-bar">
+						<img alt="GIT" id="mobile-GIT" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="stack" />
+						<div class="mobile-story-title">GIT</div>
+					</div>
+				</div>
+				
+
+				<div class="col-md-6" id="info-bar">
+					<div class="row">
+						<div class="col-md-4"  id="username">
+                            <h1 class>chris_fink</h1>
+						</div>
+						<div class="col-md-4" id="message">
+							<!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#exampleModal">Message</button>
+							<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-xl">
+	  									<div class="modal-content">
+											<div class="modal-header">
+		  										<h5 class="modal-title" id="exampleModalLabel">Message Chris Fink</h5>
+		  										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<form id="contact_form" name="contact_form" method="post">
+													<div class="mb-5 row">
+														<div class="col">
+															<label>First Name</label>
+															<input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
+														</div>
+														<div class="col">
+															<label>Last Name</label>
+															<input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
+														</div>
+													</div>
+													<div class="mb-5 row">
+														<div class="col">
+															<label for="email_addr">Email address</label>
+															<input type="email" required maxlength="50" class="form-control" id="email_addr" name="email" placeholder="name@example.com">
+														</div>
+														<div class="col">
+															<label for="phone_input">Phone</label>
+															<input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone" placeholder="Phone">
+														</div>
+													</div>
+													<div class="mb-5">
+														<label for="message">Message</label>
+														<textarea class="form-control" id="message" name="message" rows="5"></textarea>
+													</div>
+													<button type="submit" class="btn btn-primary">Submit</button>
+												</form>
+											</div>
+											<div class="modal-footer">
+											</div>
+	  									</div>
+									</div>
+  								</div>
+						</div>
+						<div class="col-md-4" id="add">
+                            <button type="button" class="btn btn-light" id="add-person"><img src="person-plus-fill.svg" alt="add" class="add-friend" /></button>
+						</div>
+					</div>
+					<div class="row" id="stats">
+						<div class="col-md-4" id="posts">
+						</div>
+						<div class="col-md-4" id="followers">
+						</div>
+						<div class="col-md-4" id="following">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+					</div>
+					<div class="row" id="bio">
+						<div class="col-md-12">
+                            <h3>Christopher Fink <span>He/Him/His</span></h3>
+                            <p>Hi! My name is Chris and I enjoy solving problems and building solutions. This love for problem solving is what has drawn me to the world of web development. For me the greatest reward is the feeling of fixing the bug that has plagued my code and seeing my program work as designed.</p>
+                            <p>This desire to solve problems and build solutions has brought me to the place in life where I am looking to make a career transition and join the tech industry as a web developer.</p>
+                            <p>In my learning journy to become a developer I have become proficient in <b>JavaScript, Python, HTML, and CSS</b>. I have also gained experience working with <b>React</b>, and CSS frameworks such as <b>Bootstrap</b> and <b>Tailwind</b>.</p>
+							<p>Visit: <a href="https://linktr.ee/fink.dev">linktr.ee/fink.dev</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <!--Languages icons-->
+			<div class="row flex-row flex-nowrap" id="story-bar">
+				<div class="col-md-2"  id="languages-bar">                    
+					<img alt="JS" id="js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="stack" />
+                    <div class="story-title">JAVASCRIPT</div>
+                </div>
+				<div class="col-md-2"  id="languages-bar">
+					<img alt="Bootstrap" id="bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="stack" />
+                    <div class="story-title">BOOTSTRAP</div>
+
+				</div>
+				<div class="col-md-2"  id="languages-bar">
+					<img alt="Tailwind" id="Tailwind" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="stack" />
+                    <div class="story-title">Tailwind</div>
+				</div>
+				<div class="col-md-2"  id="languages-bar">
+					<img alt="NodeJS" id="NodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"" class="stack" />
+                    <div class="story-title">NodeJS</div>
+				</div>
+				<div class="col-md-2"  id="languages-bar">
+                    <img alt="SASS" id="sass" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" class="stack" />
+                    <div class="story-title">SASS</div>
+				</div>
+				<div class="col-md-2"  id="languages-bar">
+                    <img alt="PYTHON" id="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="stack" />
+                    <div class="story-title">PYTHON</div>
+				</div>
+				<div class="col-md-2" id="languages-bar">
+					<img alt="CSS3" id="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="stack" />
+                    <div class="story-title">CSS</div>
+				</div>
+				<div class="col-md-2" id="languages-bar">
+                    <img alt="HTML5" id="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="stack" />
+                    <div class="story-title">HTML</div>
+				</div>
+				<div class="col-md-2" id="languages-bar">
+					<img alt="GITHUB" id="GITHUB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="stack" />
+                    <div class="story-title">GITHUB</div>
+				</div>
+				<div class="col-md-2" id="languages-bar">
+					<img alt="GIT" id="GIT" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="stack" />
+                    <div class="story-title">GIT</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+
+    <!--Body Section-->    
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<!--Need a modal that makes the picture clickable and then opens up to show discription and tech stack-->
+		<div class="col-md-8">
+			<div class="row" id="projects">
+				<div class="col-md-4" id="project-thumb">
+					<button type="button" id="project-button" data-bs-toggle="modal" data-bs-target="#weather-Modal"> 
+						<img alt="weather2-thumbnail" src="img/weather2.PNG" />
+					</button>
+					<!-- Modal -->
+					<div class="modal top fade" id="weather-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+						<div class="modal-dialog modal-xl ">
+	  						<div class="modal-content">
+								<div class="modal-header">
+		  								<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="row">
+										  	<div class="col-md-6">
+												<img alt="weather2-thumbnail" src="img/weather2.PNG" />
+											</div>
+										  	<div class="col-md-6">
+												<p>This project was an opportunity for me to dive deeper into the concepts of DOM manipulation in JavaScript. This project also allowed me to practice using math operators in JavaScript since the API provides data in Celsius but I assumed the client would be American and want to use imperial units</p>
+												<p>Moving forward on this project I would like to include the forecast for the next 5 days and create a option for the client to select between imperial or metric measurements.</p>
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" id="modal-stack" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+		  							<a href="https://github.com/chris-fink/Weather-API-app" class="btn btn-info" role="button" id="modal-button">
+										Code Preview
+									</a>
+		  							<a href="https://myweathersearch-app.netlify.app" class="btn btn-info" role="button" id="modal-button">
+										Live Site
+									</a>
+								</div>
+	  						</div>
+						</div>
+  					</div>
+					
+				</div>
+
+				<div class="col-md-4" id="project-thumb">
+					<button type="button" id="project-button" data-bs-toggle="modal" data-bs-target="#github-Modal"> 
+						<img alt="github2-thumbnail" src="img/github-card2.PNG" />
+					</button>
+					<!-- Modal -->
+					<div class="modal top fade" id="github-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+						<div class="modal-dialog modal-xl ">
+	  						<div class="modal-content">
+								<div class="modal-header">
+		  								<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="row">
+										  	<div class="col-md-6">
+												<img alt="github2-thumbnail" src="img/github-card2.PNG" />
+											</div>
+										  	<div class="col-md-6">
+												<p>I created this app as a learning opportunity to explore API's, working with JSON data, and to become more confident with JavaScript DOM's. I used the GitHub API to develop an application that allows the client to search any github user and return a card with the users name, public repositories, their number of followers, the number of users they follow, and a link to their GitHub profile.</p>
+												<p>I used Bootstrap again for the speed I could build the navbar and card, and the ease of customization. I also used this project as an opportunity to be a </p>
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" id="modal-stack" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+		  							<a href="https://github.com/chris-fink/Bootstrap-GitHub_profile_card" class="btn btn-info" role="button" id="modal-button">
+										Code Preview
+									</a>
+		  							<a href="https://github-playingcards.netlify.app" class="btn btn-info" role="button" id="modal-button">
+										Live Site
+									</a>
+								</div>
+	  						</div>
+						</div>
+  					</div>					
+				</div>
+
+				<div class="col-md-4" id="project-thumb">
+					<button type="button" id="project-button" data-bs-toggle="modal" data-bs-target="#bic-Modal"> 
+						<img alt="bic-thumbnail" src="img/bic.PNG" />
+					</button>
+					<!-- Modal -->
+					<div class="modal top fade" id="bic-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+						<div class="modal-dialog modal-xl ">
+	  						<div class="modal-content">
+								<div class="modal-header">
+		  								<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="row">
+										  	<div class="col-md-6">
+												<img alt="bic-thumbnail" src="img/bic.PNG" />
+											</div>
+										  	<div class="col-md-6">
+												<p>This site was built as a project for a FreeCodeCamp learning path. It is mainly built in HTML and CSS using Bootstrap components and grid features to assist with responsiveness.</p>
+												<P>The early premise for the site was to be a play on the old sales interview trope "Sell me this pen" but to put the web developer spin on it and create a landing page for a pen we have all used but few have enjoyed.</P>
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" id="modal-stack" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+		  							<a href="https://github.com/chris-fink/FCC-Product-Landing-Page" class="btn btn-info" role="button" id="modal-button">
+										Code Preview
+									</a>
+		  							<a href="https://sellme-thispen.netlify.app" class="btn btn-info" role="button" id="modal-button">
+										Live Site
+									</a>
+								</div>
+	  						</div>
+						</div>
+  					</div>
+				</div>
+
+			</div>
+			<div class="row" id="projects">
+
+				<div class="col-md-4" id="project-thumb">
+					<button type="button" id="project-button" data-bs-toggle="modal" data-bs-target="#calc-Modal"> 
+						<img alt="calc-thumbnail" src="img/calculator.PNG" />
+					</button>
+					<!-- Modal -->
+					<div class="modal top fade" id="calc-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+						<div class="modal-dialog modal-xl ">
+	  						<div class="modal-content">
+								<div class="modal-header">
+		  								<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="row">
+										  	<div class="col-md-6">
+												<img alt="Bootstrap Image Preview" src="img/calculator.PNG" />
+											</div>
+										  	<div class="col-md-6">
+												<p>I made this calculator app as an introduction to JavaScript and to help drive home the concepts of DOM's. I made this with help from my mentor and several tutorials when I would get stuck.</p>
+												<p>I originally built this application in vanilla JavaScript and vanilla CSS but later refractored with Bootstrap CSS because I wanted the app to take advantage of Bootstraps responsive design, cross-browser compatibility, and pre-existing components. </p>
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" id="modal-stack" />
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+		  							<a href="https://github.com/chris-fink/Calculator-JS" class="btn btn-info" role="button" id="modal-button">
+										Code Preview
+									</a>
+		  							<a href="https://littlecalculator-app.netlify.app" class="btn btn-info" role="button" id="modal-button">
+										Live Site
+									</a>
+								</div>
+	  						</div>
+						</div>
+  					</div>
+				</div>
+
+				<div class="col-md-4" id="project-thumb">
+					
+				</div>
+				<div class="col-md-4" id="project-thumb">
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+
+    <!--Footer Section-->
+	<div class="row">
+		<div class="col-md-12">
+		</div>
+	</div>
 </div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h2 class="w3-center">ABOUT ME</h2>
-  <p class="w3-center"><em>I am a Problem Solver</em></p>
-  <p>My name is Christopher Fink. Over the last 8 years I have pursued a career in logisitics where it is essential to be a constant learner, creative thinker and problem solver. That love for problem solving and learning made me instantly fall in love with programming. </p>
-  <!--  Profile Picture and Description  -->
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-section">
-      <img src="https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/52605266_10157024478841197_7044995213080657920_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=98mzshfQ25IAX_GfxQ6&tn=PIfF5ISWX8DPz60T&_nc_ht=scontent-iad3-2.xx&oh=00_AT8X-ics_Qqso2PIhkaPdXzIwYr5R_a2uoVHY9Hgx3iHnQ&oe=62F956AE" id="profile" class="w3-circle" alt="Photo of Me" width="300" height="300">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-section">
-      <p>I began teaching myself programming in June 2022 through the help of FreeCodeCamp, CodeAcadmeny, and the endless programming knowledge available on Google. My goal is to make a career shift in this year and become a Frontend Web Developer.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container" id="portfolio">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64">
-  <h2 class="w3-center">MY WORK</h2>
-  <p class="w3-center"><em>This is a sample of my recent projects.<br> Click images to view projects.</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  
-  <div class="w3-row-padding w3-center">
-<div class="w3-col m3">
-      <img src="https://github.com/chris-fink/Netflix-Landing-Page-Clone/blob/main/screenshot.PNG?raw=true" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" height="165">
-      <!---Add view code link--->
-    </div>
-    <div class="w3-col m3">
-      <img src="https://github.com/chris-fink/Calculator-JS/blob/main/calculator.PNG?raw=true" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" height="165">
-      <!---Add view code link--->
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://unsplash.it/400/302?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://unsplash.it/400/303?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-  </div>
+ 
 
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" style="max-width:100%">
-  </div>
-</div>
+<script src="stats.js"></script>
+<script src="slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=th772rgv&n=n1.ratufa.io"></script>
+</body>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container" id="contact">
-  <div class="w3-display-middle">
-    <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">How to connect with me</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <address class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-    </div>
-    <div class="w3-col m8 w3-container w3-section">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Spartanburg, South Carolina<br>
-        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: chris.fink2@gmail.com@gmail.com<br>
-      </div>
-      <p>Lets connect:</p>
-      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
-        </div>
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
-        </div>
-      </div>
-      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
-      <a href="mailto:chris.fink2@gmail.com" class="w3-btn w3-section w3-right">SEND</a>
-    </div>
-  </address>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
-  <div class="w3-half">
-    <a target="_blank" href="https://github.com/chris-fink">
-      <i class="fa fa-github fa-2x"></i>
-    </a>
-    <a target="_blank" href="https://www.freecodecamp.org/fcc6b1db816-8e65-4a82-9a47-7d74a5fc5734">
-      <i class="fa fa-fire fa-2x"></i>
-    </a>
-    <a target="_blank" href="https://twitter.com/Fink_dev">
-      <i class="fa fa-twitter fa-2x"></i>
-    </a>
-    <a target="_blank" href="https://codepen.io/chris-fink">
-      <i class="fa fa-codepen fa-2x"></i>
-    </a>
-  </div>
-</footer>
+</html>
