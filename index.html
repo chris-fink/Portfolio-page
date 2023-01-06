@@ -98,7 +98,11 @@
 						<div class="mobile-story-title">Redux</div>
 					</div>
 					<div class="col-md-2"  id="mobile-languages-bar">
-						<img alt="NodeJS" id="mobile-NodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"" class="stack" />
+						<img alt="NodeJS" id="mobile-ExpressJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" class="stack" />
+						<div class="mobile-story-title">ExpressJS</div>
+					</div>
+					<div class="col-md-2"  id="mobile-languages-bar">
+						<img alt="NodeJS" id="mobile-NodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" class="stack" />
 						<div class="mobile-story-title">NodeJS</div>
 					</div>
 					<div class="col-md-2"  id="mobile-languages-bar">
@@ -233,11 +237,15 @@
 					<div class="story-title">Firebase</div>
 				</div>
 				<div class="col-md-2"  id="languages-bar">
+					<img alt="NodeJS" id="ExpressJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" class="stack" />
+                    <div class="story-title">ExpressJS</div>
+				</div>
+				<div class="col-md-2"  id="languages-bar">
 					<img alt="Redux" id="redux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" class="stack" />
 					<div class="story-title">Redux</div>
 				</div>
 				<div class="col-md-2"  id="languages-bar">
-					<img alt="NodeJS" id="NodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"" class="stack" />
+					<img alt="NodeJS" id="NodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" class="stack" />
                     <div class="story-title">NodeJS</div>
 				</div>
 				<div class="col-md-2"  id="languages-bar">
@@ -289,6 +297,51 @@
 			<div class="row" id="projects">
 				<div class="col-md-4" id="project-thumb">
 					<button type="button" id="project-button" data-bs-toggle="modal" data-bs-target="#weather-Modal"> 
+						<img alt="newsletter-thumbnail" src="img/LAB-newsletter.PNG" />
+					</button>
+					<!-- Modal -->
+					<div class="modal top fade" id="weather-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+						<div class="modal-dialog modal-xl ">
+	  						<div class="modal-content">
+								<div class="modal-header">
+		  								<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="row">
+										  	<div class="col-md-6">
+												<img alt="weather2-thumbnail" src="img/LAB-newsletter.PNG" />
+											</div>
+										  	<div class="col-md-6">
+												<p>This was my first expreience with backend development and working in Node and ExpressJS. While the styling is minimalistic, the exercise for me was to become more comfortable operating with server-side JavaScript and using a public API to collect user inputs, and send JSON data instead of retrieving it to display.</p>
+												<p>I used MailChimp to create a database for user sign-up to collect their name and email address. Then using their API I would send the user information to update the database automatically when the user clicked the Signup button.</p>
+												<p>I also created signup success and signup failure pages that uses the https code returned by the API upon signup to determine if signup was a success or failure and redirect the user to the corresponding page. If successful, the user was taken to a page that informed them of their successful signup and prompted them to explore the London App Brewery page further. If the signup failed, the user is directed to a page that notifies them that there was an issue and invites them to try again by pressing the button on screen. This button then cycles the user back to the signup page to repeat the process.</p>
+												<p><b>Please note that due to the mailchimp API security the GitHub repository must be private. If you would like I would be glad to share the source code with you upon request.</b></P>
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" id="modal-stack" />
+												<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" id="modal-stack" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+		  							<!--  <a href="https://github.com/chris-fink/Weather-API-app" class="btn btn-info" role="button" id="modal-button">
+										Code Preview
+									</a>  -->
+		  							<a href="https://lab-newsletter-signup.onrender.com/?_sm_au_=iQV37J3vs1n3T547ML8tvK34L00HF" class="btn btn-info" role="button" id="modal-button">
+										Live Site
+									</a>
+								</div>
+	  						</div>
+						</div>
+  					</div>	
+				</div>
+
+
+				<div class="col-md-4" id="project-thumb">
+					<button type="button" id="project-button" data-bs-toggle="modal" data-bs-target="#weather-Modal"> 
 						<img alt="weather2-thumbnail" src="img/weather2.PNG" />
 					</button>
 					<!-- Modal -->
@@ -325,8 +378,7 @@
 								</div>
 	  						</div>
 						</div>
-  					</div>
-					
+  					</div>	
 				</div>
 
 				<div class="col-md-4" id="project-thumb">
@@ -370,6 +422,8 @@
   					</div>					
 				</div>
 
+			</div>
+			<div class="row" id="projects">
 				<div class="col-md-4" id="project-thumb">
 					<button type="button" id="project-button" data-bs-toggle="modal" data-bs-target="#bic-Modal"> 
 						<img alt="bic-thumbnail" src="img/bic.PNG" />
@@ -410,8 +464,6 @@
   					</div>
 				</div>
 
-			</div>
-			<div class="row" id="projects">
 
 				<div class="col-md-4" id="project-thumb">
 					<button type="button" id="project-button" data-bs-toggle="modal" data-bs-target="#calc-Modal"> 
@@ -458,9 +510,6 @@
 				<div class="col-md-4" id="project-thumb">
 					
 				</div>
-				<div class="col-md-4" id="project-thumb">
-					
-				</div>
 			</div>
 		</div>
 		<div class="col-md-2">
@@ -470,6 +519,7 @@
     <!--Footer Section-->
 	<div class="row">
 		<div class="col-md-12">
+			<p class="mt-5 mb-3 text-muted" id="circa">&copy; 2022-2023</p>
 		</div>
 	</div>
 </div>

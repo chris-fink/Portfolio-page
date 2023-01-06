@@ -313,6 +313,13 @@ div#story-bar #languages-bar {
     outline: 2px groove #A4A4A4;
     outline-offset: 3px;
 }
+#ExpressJS {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    outline: 2px groove #A4A4A4;
+    outline-offset: 3px;
+}
 div#projects.row {
     margin-bottom: 28px;
 }
@@ -388,6 +395,9 @@ img#modal-stack {
 }
 div#mobile-bio{
     display: none;
+}
+p#circa {
+    text-align: center;
 }
 
 
@@ -652,6 +662,14 @@ div#mobile-bio{
         margin: 0;
     }
     #mobile-NodeJS {
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        outline: 2px groove #A4A4A4;
+        outline-offset: 3px;
+        margin: 0;
+    }
+    #mobile-ExpressJS {
         border-radius: 50%;
         height: 4em;
         width: 4em;
