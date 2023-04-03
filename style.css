@@ -250,6 +250,13 @@ div#story-bar #languages-bar {
     outline: 2px groove #A4A4A4;
     outline-offset: 3px;
 }
+#mongodb {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    outline: 2px groove #A4A4A4 !important;
+    outline-offset: 3px;
+}
 #firebase {
     border-radius: 50%;
     height: 75px;
@@ -590,6 +597,14 @@ p#circa {
         margin: 0;
     }
     #mobile-react {
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        outline: 2px groove #A4A4A4;
+        outline-offset: 3px;
+        margin: 0;
+    }
+    #mobile-mongo {
         border-radius: 50%;
         height: 4em;
         width: 4em;
